@@ -8,6 +8,7 @@
 --icon-color: #000; 
 }
 body {
+    width: 1600px;
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
@@ -27,6 +28,12 @@ li {
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    width: 1600px;
+}
 nav {
     display: flex;
 }
@@ -37,36 +44,33 @@ nav {
 .container {
     display: flex;
     width: 1600px;
+    align-items: center;
+    margin-right: 215px;
 }  
-header {
+.contacts {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
-    width: 1600px;
-}
-.container .contacts {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+    margin-left: auto;
 }
 .nav-link {
+    display: flex;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color); 
-    
+    color: var(--secondary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .nav>li:first-child {
-    margin-left: 145px;
+    margin-left: 15px;
 }
 
-.nav>li:not(first-child) {
+.nav>li:not(:first-child) {
     margin-left: 50px;
 }
+
 .nav .current {
     color: var(--accent-color);
 }
@@ -74,36 +78,21 @@ header {
 .nav-link:focus, .contacts:focus{
     color: var(--accent-color);
 }
+.logo {
+    color: var(--accent-color);
+}
 .icon {
+    display: flex;
     font-family: Raleway, sans-serif;;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
     color: var(--icon-color);
-    padding: 0%;
-    margin: 0%;
-    background-color: brown;
-}  
-
-/*.contacts>li:last-child {
-    margin-right: 215px;
-    margin-left: 50px;
-}  
-*/
-footer > .icon {
-    color: var(--button-color);
-}
-footer {
-    background-color: var(--secondary-background-color);
-}
-
-.logo {
-    
-    color: var(--accent-color);
-    margin-top: 25px;
+    align-items: center;
     margin-left: 215px;
-    margin-bottom: 24px;
-
+}  
+.contacts>li:last-child {
+    margin-left: 50px;
 }
 .contact {
     font-family: Roboto;
@@ -121,13 +110,22 @@ footer {
     line-height: 1.36;
     letter-spacing: 0.06em;
     color: var(--button-color);
-    text-align: center;
+    /* text-align: center; */
 }
 .title-hero {
     font-size: 44px;
-    font-weight: 900;   
+    font-weight: 900;
+    text-align: center;
+    /* width: 696px; */
+    padding-top: 200px;
+    padding-bottom: 30px;
+    
+}
+button {
+    text-align: center;
 }
 .button {
+    display: block;
     background-color: var(--accent-color);
     font-size: 16px;
     font-weight: 700;
@@ -135,6 +133,7 @@ footer {
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--button-color);
+    margin:0 auto;
 }
 .advantages {
     font-size: 14px;
@@ -201,4 +200,10 @@ footer {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--secondary-text-color);
+}
+footer > .icon {
+    color: var(--button-color);
+}
+footer {
+    background-color: var(--secondary-background-color);
 }
