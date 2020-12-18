@@ -70,7 +70,6 @@ nav {
 .nav>li:not(:first-child) {
     margin-left: 50px;
 }
-
 .nav .current {
     color: var(--accent-color);
 }
@@ -121,9 +120,9 @@ nav {
     padding-bottom: 30px;
     
 }
-button {
+/* button {
     text-align: center;
-}
+} */
 .button {
     display: block;
     background-color: var(--accent-color);
@@ -134,14 +133,29 @@ button {
     text-align: center;
     color: var(--button-color);
     margin:0 auto;
+    padding: 10px 32px;
+    border: 2px;
+    border-radius: 4px;
+}
+.list-advantages {
+    display: flex;
+    margin-top: 94px;
+    margin-left:  215px;
+    /* justify-content: center; */
+}
+.desc-advantages {
+    padding-bottom: 0;
 }
 .advantages {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    width: 270px;
+    margin: 0;
 }
 .head-advantages {
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -149,12 +163,29 @@ button {
     color: var(--secondary-text-color);
     text-transform: uppercase;
 }
+.list-advantages>li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 94px;
+}
+.list-work {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.list-work>li {
+    margin-right: 27px;
+}
+.list-work :last-child {
+    margin-right: 0;
 }
 .employee-name {
     font-size: 16px;
@@ -182,6 +213,7 @@ button {
 }
 .visually-hidden {
     visibility: hidden;
+    height: 0;
 }
 .button-filter {
     font-family: inherit;
