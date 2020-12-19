@@ -4,7 +4,7 @@
 --primary-background-color: #E5E5E5;
 --secondary-background-color: #2F303A;
 --accent-color: #2196F3;
---button-color: #fff;   
+--third-background-color: #fff;   
 --icon-color: #000; 
 --team-color: #F5F4FA;
 }
@@ -29,11 +29,12 @@ li {
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
-
 header {
     display: flex;
     align-items: center;
     width: 1600px;
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--third-background-color);
 }
 nav {
     display: flex;
@@ -41,6 +42,7 @@ nav {
 .nav {
     display: flex;
     align-items: center;
+    margin-left: 93px;
 }
 .container {
     display: flex;
@@ -109,21 +111,15 @@ nav {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: var(--button-color);
-    /* text-align: center; */
 }
 .title-hero {
     font-size: 44px;
     font-weight: 900;
     text-align: center;
-    /* width: 696px; */
     padding-top: 200px;
     padding-bottom: 30px;
-    
+    color: var(--third-background-color);
 }
-/* button {
-    text-align: center;
-} */
 .button {
     display: block;
     background-color: var(--accent-color);
@@ -132,7 +128,7 @@ nav {
     line-height: 1.9;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--button-color);
+    color: var(--third-background-color);
     margin:0 auto;
     padding: 10px 32px;
     border: 2px;
@@ -212,16 +208,12 @@ nav {
     display: flex;
     width: 1170px;
     margin: auto;
-    /* justify-content: center; */
 }
 .all-team>li {
     margin-right: 30px;
 }
-/* .team-member {
-    margin-right: 30px;
-} */
 .team-memeber {
-    background-color: var(--button-color);
+    background-color: var(--third-background-color);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 94px;
 }
@@ -246,18 +238,13 @@ nav {
     margin-bottom: 30px;
     color: var(--primary-text-color);
 }
-/* .full-address {
-    display: flex;
-    flex-direction: column;
-    padding-left: 215px;
-} */
 .address {
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--button-color);
+    color: var(--third-background-color);
     margin-top: 20px;
     margin-bottom: 0;
     padding-left: 215px;
@@ -279,15 +266,42 @@ nav {
     height: 1px;
     margin: -1px;
 }
+main {
+    display: flex;
+    width: 1600px;
+    background-color: var(--third-background-color);
+}
+.main {
+    display: block;
+}
+.filter {
+    display: block;
+    justify-content: center;
+    margin-top: 94px;
+    margin-left: 495px;
+    margin-bottom: 50px;
+}
+.list-filter {
+    display: inline-block;
+    flex-direction: row;
+}
 .button-filter {
     font-family: inherit;
     color: var(--secondary-text-color);
-    background-color: var(--primary-background-color);
+    cursor:pointer;
+    margin-right: 8px;
+    height: 38px;
 }
 .button-filter:hover,
 .button-filter:focus {
     background-color: var(--accent-color);
-    color: var(--button-color);
+    color: var(--third-background-color);
+}
+button {
+    outline: none;
+    border: none;
+    background-color: var(--third-background-color); 
+    
 }
 .projects {
     font-size: 18px;
@@ -296,9 +310,32 @@ nav {
     letter-spacing: 0.06em;
     text-align: left;
     color: var(--secondary-text-color);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+.all-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 215px;
+}
+.one-work {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.projects-description {
+    margin-left: 24px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.img-advertisment {
+    display: block;
 }
 footer > .icon {
-    color: var(--button-color);
+    color: var(--third-background-color);
     padding-top: 60px;
 }
 footer {
