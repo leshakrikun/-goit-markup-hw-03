@@ -30,11 +30,9 @@
         margin: 0;
     }
     header {
-        /* display: flex; */
         align-items: center;
         border-bottom: 1px solid #ECECEC;
         background-color: var(--third-background-color);
-        /* flex-direction: row; */
     }
     nav {
         display: flex;
@@ -113,21 +111,16 @@
         font-weight: 900;
         line-height: 1.36;
         letter-spacing: 0.06em;
-        /* display: block; */
         padding-top: 200px;
         padding-bottom: 200px;
         margin-bottom: 94px;
     }
     .title-hero {
-        /* display: block; */
-        /* flex-direction: column; */
         font-size: 44px;
         font-weight: 900;
         text-align: center;
-        /* padding-top: 200px; */
         padding-bottom: 30px;
-        color: var(--third-background-color);
-        
+        color: var(--third-background-color);  
     }
     .button {
         display: block;
@@ -142,7 +135,7 @@
         padding: 10px 32px;
         border: 2px;
         border-radius: 4px;
-        cursor:pointer;
+        cursor: pointer;
     }
     .list-advantages {
         display: flex;
@@ -166,6 +159,7 @@
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
         text-transform: uppercase;
+        margin-bottom: 10px;
     }
     .list-advantages>li:not(:last-child) {
         margin-right: 30px;
@@ -223,8 +217,7 @@
     }
     .team-memeber {
         background-color: var(--third-background-color);
-        border-radius: 0px 0px 4px 4px;
-        
+        border-radius: 0px 0px 4px 4px;    
     }
     .all-team>li:last-child {
         margin-right: 0;
@@ -256,19 +249,25 @@
         margin: -1px;
     }
     main {
-        /* display: flex;
-        width: 1600px; */
         background-color: var(--third-background-color);
     }
     .main {
         display: block;
-        margin-top: 94px;
+        padding-top: 94px;
         width: 1170px;
+        align-items: center;
+        margin: auto;
+    }
+    .total {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     .filter {
-        /* display: block; */
+        display: flex;
         text-align: center;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
+        margin: auto;
     }
     .list-filter {
         display: inline-block;
@@ -279,7 +278,11 @@
         color: var(--secondary-text-color);
         cursor:pointer;
         margin-right: 8px;
-        height: 38px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: center;
     }
     .button-filter:hover,
     .button-filter:focus {
@@ -315,7 +318,7 @@
         padding: 20px 24px;
     }
     .projects-description {
-        margin: 0;
+        text-align: left;
     }
     .img-advertisment {
         display: block;
@@ -334,16 +337,17 @@
     .footer-contacts {
         font-style: normal;
         color: rgba(255,255,255,0.6);
-        margin-top: 9px;
+        margin-top: 12px;
         margin-bottom: 0;
 
     }
     footer  .icon {
         color: var(--third-background-color);
-        padding-top: 60px;
+        
     }
     footer {
         background-color: var(--secondary-background-color);
         display: block;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
