@@ -283,10 +283,10 @@
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.03em;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        padding: 6px 22px;
         text-align: center;
         background-color: #f5f4fa;
+        border-radius: 4px;
     }
     .button-filter:hover,
     .button-filter:focus {
@@ -321,7 +321,7 @@
     }
     .projects-item {
         padding: 20px 24px;
-        
+        border: 1px solid #EEEEEE;   
     }
     .projects-description {
         text-align: left;
