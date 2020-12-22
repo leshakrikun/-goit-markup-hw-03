@@ -113,7 +113,10 @@
         letter-spacing: 0.06em;
         padding-top: 200px;
         padding-bottom: 200px;
-        margin-bottom: 94px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
     }
     .title-hero {
         font-size: 44px;
@@ -165,11 +168,12 @@
         margin-right: 30px;
     }
     .our-advantages {
-        margin-bottom: 94px;
+        padding-bottom: 94px;
+        padding-top: 94px;
     }
     .our-work{
         display: block;
-        margin-bottom: 94px;
+        padding-bottom: 94px;
         justify-content: center;
     }
     .section-title {
@@ -179,6 +183,7 @@
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
         text-align: center;
+        padding-bottom: 94px;
     }
     .our-team {
         color: var(--team-color);
@@ -199,7 +204,6 @@
     }
     .list-work {
         display: flex;
-        margin-top: 50px;
         justify-content: center;
     }
     .list-work>li {
@@ -254,9 +258,7 @@
     .main {
         display: block;
         padding-top: 94px;
-        width: 1170px;
-        align-items: center;
-        margin: auto;
+        padding-bottom: 94px;
     }
     .total {
         display: flex;
@@ -271,7 +273,6 @@
     }
     .list-filter {
         display: inline-block;
-        flex-direction: row;
     }
     .button-filter {
         font-family: inherit;
@@ -282,7 +283,10 @@
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.03em;
+        padding-top: 6px;
+        padding-bottom: 6px;
         text-align: center;
+        background-color: #f5f4fa;
     }
     .button-filter:hover,
     .button-filter:focus {
@@ -291,9 +295,7 @@
     }
     button {
         outline: none;
-        border: none;
-        background-color: var(--third-background-color); 
-        
+        border: none;        
     }
     .projects {
         font-size: 18px;
@@ -303,22 +305,29 @@
         text-align: left;
         color: var(--secondary-text-color);
         margin-bottom: 4px;
+        line-height: 36px;
     }
     .all-portfolio {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin-left: -30px;
+        margin-top: -30px;
+        /* justify-content: space-between; */
     }
     .one-work {
         background: #FFFFFF;
-        border: 1px solid #EEEEEE;
-        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
     }
     .projects-item {
         padding: 20px 24px;
+        
     }
     .projects-description {
         text-align: left;
+        margin: 0;
+        line-height: 30px;
+        font-size: 16px;
     }
     .img-advertisment {
         display: block;
